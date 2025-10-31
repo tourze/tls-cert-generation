@@ -1,0 +1,27 @@
+{
+  "name": "tourze/tls-cert-generation",
+  "description": "证书生成模块，支持自签名证书、CSR处理和CA功能",
+  "type": "library",
+  "license": "MIT",
+  "require": {
+    "tourze/tls-common": "0.0.*",
+    "tourze/tls-crypto-asymmetric": "0.0.*",
+    "tourze/tls-crypto-random": "0.0.*",
+    "tourze/tls-x509-core": "0.0.*"
+  },
+  "require-dev": {
+    "phpstan/phpstan": "^2.1",
+    "phpunit/phpunit": "^11.5",
+    "tourze/phpunit-base": "1.*"
+  },
+  "autoload": {
+    "psr-4": {
+      "Tourze\\TLSCertGeneration\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Tourze\\TLSCertGeneration\\Tests\\": "tests/"
+    }
+  }
+}
